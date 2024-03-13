@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class vijay{
+public static void main(String[] args){
+    Scanner in = new Scanner(System.in);
+    int num,n,i,sum=0;
+    
+    System.out.print("enter the numbers range ");
+    num = in.nextInt();
+    System.out.println("enter the numbers list ");
+    for(i=0;i<num;i++){
+        n = in.nextInt();
+        sum += n;
+    }
+    System.out.print("sum of "+num+" numbers "+sum);
+}
+}
