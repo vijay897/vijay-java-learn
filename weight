@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        float weight,charge;
+        System.out.println("enter the weight: ");
+        weight = in.nextInt();
+        
+        if(weight<=5)
+        charge = 6;
+        else
+        weight = weight - 5;
+        charge = (float) (6+(weight*1.2));
+        System.out.print("total charges: "+charge);
+    }
+}
