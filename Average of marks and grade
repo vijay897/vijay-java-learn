@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args){
+    Scanner in  = new Scanner(System.in);
+    int n,i,sum=0;
+    float avg;
+    System.out.println("enter the range: ");
+    n = in.nextInt();
+    int[] arr = new int [n];
+    System.out.println("enter the number: ");
+    for(i=0;i<n;i++){
+        arr[i] = in.nextInt();
+        sum = sum+arr[i];
+    }
+    System.out.println("Sum of All Numbers "+sum);
+    avg = sum/n;
+    System.out.println("Avg "+avg);
+    if(avg>=91 && avg<=100)
+    System.out.println("A");
+    else if(avg>=81 && avg<=90)
+    System.out.println("B");
+    else if(avg>=71 && avg<=80)
+    System.out.println("C");
+    else
+    System.out.println("Fail");
+    }
+}
