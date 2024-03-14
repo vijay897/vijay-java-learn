@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int num,sum=0;
+        System.out.print("enter the numbers : ");
+        num = in.nextInt();
+        
+        while(num != 0){
+            sum++;
+            num = num/10;
+        }
+        System.out.print("No.of Digits: "+sum);
+    }
+}
